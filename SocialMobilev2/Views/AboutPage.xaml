@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SocialMobilev2.Views.AboutPage"
+             xmlns:vm="clr-namespace:SocialMobilev2.ViewModels"
+             Title="PhotoHelper"
+             >
+    
+   
+        
+  
+    
+    <ContentPage.BindingContext>
+        <vm:AboutViewModel />
+    </ContentPage.BindingContext>
+    
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="Accent">#162127</Color>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Grid>
+                    <Image Source="dsc.jpg"
+               Aspect="AspectFill"
+               HorizontalOptions="FillAndExpand"
+               VerticalOptions="FillAndExpand"
+               HeightRequest="740"
+               ></Image>
+                    <AbsoluteLayout Margin="5" HorizontalOptions="Center">
+                        <StackLayout WidthRequest="365" HeightRequest="690" HorizontalOptions="Center" VerticalOptions="Center">
+                            <Frame BorderColor="#171C21" Background="#171C21" HasShadow="True" CornerRadius="10">
+                                <ScrollView BackgroundColor="#162127" HorizontalOptions="Fill" x:Name="ScrollView">
+                                    <WebView BackgroundColor="#162127" x:Name="webview" Source="http://192.168.0.11/shopping/adminMobile/" VerticalOptions="FillAndExpand" HeightRequest="1700" MinimumHeightRequest="700" IsVisible="True"></WebView>
+                                </ScrollView>
+                            </Frame>
+                        </StackLayout>
+                    </AbsoluteLayout>
+                </Grid>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+
+</ContentPage>
