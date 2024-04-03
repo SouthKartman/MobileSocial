@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SocialMobilev2.Views.ErrorPage"
+             Background="#162127">
+    <ContentPage.Content>
+        <ScrollView HorizontalOptions="CenterAndExpand">
+            
+                
+                    <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+                        <Label TextColor="#fff" FontSize="18" Margin="5,250" Text="Нет подключения к интернету"></Label>
+                        <Button WidthRequest="200" TextColor="#fff" BackgroundColor="#000" x:Name="update" Clicked="update_Clicked" HeightRequest="40" Text="Обновить"></Button>
+                    </StackLayout>
+                
+           
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="SocialMobilev2.Views.LoginPage"
+             Shell.NavBarIsVisible="False">
+    <ContentPage.Content>
+        <Grid>
+
+            <Image  WidthRequest="1200" HeightRequest="900" Source="back_auth.jpg"></Image>
+            <StackLayout HeightRequest="58" VerticalOptions="Start" HorizontalOptions="Fill" Background="#F7A528">
+                <Label HorizontalOptions="Center" Margin="15" VerticalOptions="Center" TextColor="#fff" FontAttributes="Bold" FontSize="18"  Text="PhotoHelper by Social"></Label>
+            </StackLayout>
+            <AbsoluteLayout HorizontalOptions="Center"  VerticalOptions="Center">
+                <Frame BorderColor="Transparent" BackgroundColor="#CC040507" IsVisible="True" WidthRequest="350"  VerticalOptions="Center" HorizontalOptions="Center" Opacity="10" HeightRequest="560">
+
+
+
+                    <Grid HorizontalOptions="Center" VerticalOptions="Center">
+                        <Frame BackgroundColor="Transparent" IsVisible="True" Opacity="1"  BorderColor="Transparent" >
+                            <Label TextColor="#fff" Padding="10"  WidthRequest="90" HeightRequest="40" VerticalOptions="Start"  ></Label>
+                        </Frame>
+
+                        <!--<Border BackgroundColor="#1E252D">-->
+
+                        <StackLayout Margin="10,100" Opacity="10" HorizontalOptions="Center"  WidthRequest="350" HeightRequest="500" VerticalOptions="Center">
+                            <StackLayout WidthRequest="260" HorizontalOptions="Center" VerticalOptions="Center">
+
+                                <Label TextColor="#fff" Margin="0, 50,0,0" TextType="Html" FontSize="20">Привет,</Label>
+                                <Label Margin="0,4,0,0" FontSize="18" TextColor="#fff">С возвращением</Label>
+                                <StackLayout Opacity="10" Margin="0,60">
+                                    <StackLayout>
+                                        <Label Margin="5,0" Text="Логин" TextColor="#fff"></Label>
+                                        <Entry x:Name="UsernameEntry" TextColor="#fff" Placeholder="Введите Логин"></Entry>
+                                    </StackLayout>
+
+                                    <StackLayout Margin="0,30">
+                                        <Label Margin="5,0" Text="Пароль" TextColor="#fff"></Label>
+                                        <Entry x:Name="PasswordEntry" TextColor="#fff" Placeholder="Введите пароль"></Entry>
+                                    </StackLayout>
+
+                                </StackLayout>
+                                <Button Clicked="LoginButton_Clicked" x:Name="LoginButton" Text="Войти" BackgroundColor="#F7A528"></Button>
+                            </StackLayout>
+                        </StackLayout>
+
+
+                        <!--</Border>-->
+
+
+                    </Grid>
+                </Frame>
+            </AbsoluteLayout>
+        </Grid>
+        
+    </ContentPage.Content>
+</ContentPage>

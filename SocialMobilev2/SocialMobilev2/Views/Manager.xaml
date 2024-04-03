@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SocialMobilev2.Views.Manager">
+    <ContentPage.Content>
+        <ScrollView HeightRequest="800" Background="#171C21" HorizontalOptions="Fill"  x:Name="ManagerScroll">
+            <WebView x:Name="webview" HeightRequest="1500" VerticalOptions="FillAndExpand"  Source="http://192.168.0.11/shopping/Mobilemeneger/"  IsVisible="True"></WebView>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
